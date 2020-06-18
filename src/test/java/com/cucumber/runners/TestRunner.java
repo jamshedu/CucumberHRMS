@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 	
 		monochrome = true,
 		strict = true,
-		tags="@mvn",
+		tags="@dash",
 		plugin = {"pretty",
 				"html:target/cucumber-default-report",// create basic html report in specified locotion
 				"json:target/cucumber.json",

@@ -2,6 +2,7 @@
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/testbase/PageInitializer.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/utels/ExcelUtility.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/utels/Constants.java
+/Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/ReportElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/runners/RegressionRunner.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/testbase/BaseClass.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/runners/SmokeRunner.java
@@ -10,7 +11,9 @@
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/LoginPaigeElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/ContactDetailsElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/steps/ContactDetailsSteps.java
+/Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/steps/DashboardSteps.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/utels/ConfigsReader.java
+/Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/AddEmployeeElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/DashboardPageElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/pages/EmargencyContactsElements.java
 /Users/dzhamshedumarov/eclipse-workspace/CucumberHRMS/src/test/java/com/cucumber/steps/Login.java
