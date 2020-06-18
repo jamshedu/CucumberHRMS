@@ -16,7 +16,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		monochrome = true,
 		strict = true,
-		tags = "@reporting",
+		tags = "@smoke",
 		plugin = {
 				"pretty",//prints gherkin steps in console
 				"html:target/cucumber-default-report",//create basic html report in specified location

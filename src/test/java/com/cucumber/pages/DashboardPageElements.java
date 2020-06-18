@@ -17,7 +17,7 @@ public class DashboardPageElements extends CommonMethods{
 	@FindBy(xpath = "//a[@id='menu_admin_viewAdminModule']")
 	public WebElement adminDashboard;
 	
-	@FindBy(xpath = "//div[@class='menu']/ul/li[2]/a")
+	@FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
 	public WebElement pimClick;
 	
 	@FindBy(xpath = "//a[@id='menu_leave_viewLeaveModule']")

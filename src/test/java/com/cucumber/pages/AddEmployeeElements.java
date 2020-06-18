@@ -2,6 +2,9 @@ package com.cucumber.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.cucumber.testbase.BaseClass;
 
 public class AddEmployeeElements {
 	
@@ -14,6 +17,12 @@ public class AddEmployeeElements {
 	
 	@FindBy(xpath = "//input[@id='lastName']")
 	public WebElement lastName;
+	
+	@FindBy(id = "btnSave")
+	public WebElement saveButton;
+	
+	@FindBy(xpath = "//div[@id='profile-pic']/h1")
+	public WebElement profilePic;
 	
 	@FindBy(xpath = "//input[@id='employeeId']")
 	public WebElement idEmployee;
@@ -56,5 +65,9 @@ public class AddEmployeeElements {
 	
 	@FindBy(xpath = "//input[@id='btnSave']")
 	public WebElement editButton;
+	
+	public AddEmployeeElements() {
+		PageFactory.initElements(BaseClass.driver, this);
+	}
 
 }

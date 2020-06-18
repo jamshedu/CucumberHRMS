@@ -1,5 +1,6 @@
 package com.cucumber.testbase;
 
+import com.cucumber.pages.AddEmployeeElements;
 import com.cucumber.pages.ContactDetailsElements;
 import com.cucumber.pages.DashboardPageElements;
 import com.cucumber.pages.EmargencyContactsElements;
@@ -11,6 +12,8 @@ public class PageInitializer extends BaseClass {
 	public static DashboardPageElements dashboardPage;
 	public static EmargencyContactsElements emargencyContacts;
 	public static LoginPaigeElements loginPage;
+	public static AddEmployeeElements empAdd;
+	
 	
 	
 	
@@ -19,6 +22,7 @@ public class PageInitializer extends BaseClass {
 		 dashboardPage =new DashboardPageElements();
 		 emargencyContacts =new EmargencyContactsElements();
 		 loginPage =new LoginPaigeElements();
+		 empAdd=new AddEmployeeElements();
 	}
 
 }

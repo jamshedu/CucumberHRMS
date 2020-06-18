@@ -10,11 +10,11 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features",
 		glue = "com/cucumber/steps",
-		dryRun = false,
+		dryRun = true,
 	
 		monochrome = true,
 		strict = true,
-		tags="@dash",
+		tags="@tets",
 		plugin = {"pretty",
 				"html:target/cucumber-default-report",// create basic html report in specified locotion
 				"json:target/cucumber.json",
