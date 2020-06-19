@@ -21,6 +21,8 @@ public class AddEmployeeElements {
 	@FindBy(id = "btnSave")
 	public WebElement saveButton;
 	
+//	@FindBy(xpath = "//h1[text()='Orzu Smith']")
+//	public WebElement profilePic;
 	@FindBy(xpath = "//div[@id='profile-pic']/h1")
 	public WebElement profilePic;
 	
