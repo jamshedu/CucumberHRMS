@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-18T17:45:10.493Z",
+        "start_timestamp": "2020-07-22T21:40:00.633Z",
         "before": [
           {
             "result": {
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 8,
@@ -144,7 +144,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 11,
@@ -203,7 +203,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "skipped"
             },
             "line": 6,
@@ -215,7 +215,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "skipped"
             },
             "line": 7,
@@ -234,7 +233,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-07-18T17:45:10.687Z",
+        "start_timestamp": "2020-07-22T21:40:00.904Z",
         "before": [
           {
             "result": {
@@ -321,7 +320,7 @@
           },
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2000000,
               "status": "skipped"
             },
             "line": 14,
