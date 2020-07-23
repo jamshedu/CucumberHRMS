@@ -41,7 +41,7 @@ public class HardcodeExamples{
 	static String baseURI = RestAssured.baseURI = "http://18.232.148.34/syntaxapi/api";
 	
 	
-	static String token ="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU0NzI5NDgsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NTUxNjE0OCwidXNlcklkIjoiNjY2In0.Fyad3WpLsKo3FhhgvIUW-5V7-fq5XSAHTCfAmWdA_es";
+	static String token ="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU1MjUwNzEsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NTU2ODI3MSwidXNlcklkIjoiNjQ1In0.WdByPg73viXoyVw1e-9lLmyqwJWkhpEOfW8vtWH0QI8";
 	static String employeeID;
 	
 	
@@ -307,18 +307,54 @@ public class HardcodeExamples{
 	RequestSpecification getUpdatedEmployeeRequest=given().header("Content-Type","application/json").header("Authorization",token)
 			.queryParam("employee_id",employeeID ).log().all();
 	
-//Response getUpdatedEmployeeRespone = getUpdatedEmployee.when().get("/updateEmployee.php");
+Response getUpdatedEmployeeRespone = getUpdatedEmployeeRequest.when().get("/getOneEmployee.php");
 	
 	
+getUpdatedEmployeeRespone.prettyPrint();
 	
-	
-	
+getUpdatedEmployeeRespone.then().assertThat().statusCode(200);
 	
 	
 	}
 	
+	public void fPATCHpartiallyEmployee() {
+		
+	 RequestSpecification patchPartiallyEmployeeRequest = given().header("Content-Type","application/json").header("Authorization",token)
+		.body("{\n" + 
+				"  \"employee_id\": \""+employeeID+"\",\n" + 
+				"  \"emp_firstname\": \"syntaxPartiallyUpdatedFirstName\"\n" + 
+				"}");
+	 
+	Response patchPartiallyEmployeeResponse= patchPartiallyEmployeeRequest.when().patch("/updatePartialEmplyeesDetails.php");
 	
 	
+	patchPartiallyEmployeeResponse.prettyPrint();
+	
+	patchPartiallyEmployeeResponse.then().assertThat().statusCode(201);
+	
+	}
+
+	
+	public void gGETemployeeStatusEmployee() {
+		
+	RequestSpecification getEmployeeStatusRequest=	given().header("Content-Type","application/json").header("Authorization",token);
+	
+	Response getEmployeeStatusResponse=	getEmployeeStatusRequest.when().get("/employeeStatus.php");
+	
+	getEmployeeStatusResponse.prettyPrint();
+	
+	String employeeStatus=getEmployeeStatusResponse.body().asString();
+	JsonPath js= new JsonPath(employeeStatus);
+	int sizwOfEmployeeStatus=js.getInt("Status.size()");
+	System.out.println(sizwOfEmployeeStatus);
+	
+	getEmployeeStatusResponse.then().assertThat().statusCode(200);
+	
+	}
+	public void hGETJobTitleEmployee() {
+		
+		given().header("Content-Type","application/json").header("Authorization",token);
+	}
 	
 }		
 		
