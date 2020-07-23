@@ -19,6 +19,7 @@ import io.cucumber.junit.CucumberOptions;
 				"html:target/cucumber-default-report",// create basic html report in specified locotion
 				"json:target/cucumber.json",
 		}
+	//	System.out.println();
 		
 	)
 

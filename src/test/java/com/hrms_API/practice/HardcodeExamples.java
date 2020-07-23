@@ -41,7 +41,7 @@ public class HardcodeExamples{
 	static String baseURI = RestAssured.baseURI = "http://18.232.148.34/syntaxapi/api";
 	
 	
-	static String token ="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTUyMTM0NDQsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NTI1NjY0NCwidXNlcklkIjoiNjQ1In0.heLw4H8mEy5qI7DqNzENAa8RJqKdAxQKt7YygN3Cf9k";
+	static String token ="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTU0NzI5NDgsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTU5NTUxNjE0OCwidXNlcklkIjoiNjY2In0.Fyad3WpLsKo3FhhgvIUW-5V7-fq5XSAHTCfAmWdA_es";
 	static String employeeID;
 	
 	
@@ -222,107 +222,108 @@ public class HardcodeExamples{
 
 	@Test
     public void cgetAllEmployees() {
-    	
-    /**	
-     * 
-     * Preparing getAllEloyees request
-     */
-    	
-    RequestSpecification getAllEmployeesRequest=given().header("Content-Type","application/json").header("Authorization",token);
-    
-    
-   Response getAllEmployeesResponse=getAllEmployeesRequest.when().get("/getAllEmployees.php");
-    	
-   //getAllEmployeesResponse.prettyPrint();
-   
-   
-   String allEmployee=getAllEmployeesResponse.body().asString();
-   
-   /**
-    * The below will pass but incorect 
-    */
-  // allEmployee.contains(employeeID);
-   
-   /**
-    * -------DO Research--------
-    */
-   //allEmployee.matches(employeeID);
-   
-   
-   JsonPath js= new JsonPath(allEmployee);
-   
-   /**
-    * Retrieving size of Employees list
-    */
-  int sizeOfList= js.getInt("Employees.size()");
-   System.out.println(sizeOfList);
-   
-   /**
-    * Pring all the employeeys ID's
-    */
-   
-//   for(int i =0;i<sizeOfList;i++) {
-//	   
-//   
-//  String allEmployeeIDs= js.getString("Employees["+i+"].employee_id");
-//  // System.out.println(allEmployeeIDs);
-//  
-//  /**
-//   * 
-//   */
-//  
-//  if(allEmployeeIDs.contentEquals(employeeID)) {
-//	  System.out.println("Employee ID: "+employeeID +" is present inbody");
-//	  
-//	  String employeeFirstName= js.getString("Employees["+i+"].emp_firstname");
-//	  System.out.println(employeeFirstName);
-//	  break;
-//  }
-//  
-//  
-//  
-//  
-//  
-//  
-//   } 
-//   
-//   
-//   
-//   
-//   
-//   
-//   
-//    }
-//	
-//	
-//	
+		/**	
+	     * 
+	     * Preparing getAllEloyees request
+	     */
+	    	
+	    RequestSpecification getAllEmployeesRequest=given().header("Content-Type","application/json").header("Authorization",token);
+	    
+	    
+	   Response getAllEmployeesResponse=getAllEmployeesRequest.when().get("/getAllEmployees.php");
+	    	
+	   //getAllEmployeesResponse.prettyPrint();
+	   
+	   
+	   String allEmployee=getAllEmployeesResponse.body().asString();
+	   
+	   /**
+	    * The below will pass but incorect 
+	    */
+	  // allEmployee.contains(employeeID);
+	   
+	   /**
+	    * -------DO Research--------
+	    */
+	   //allEmployee.matches(employeeID);
+	   
+	   
+	   JsonPath js= new JsonPath(allEmployee);
+	   
+	   /**
+	    * Retrieving size of Employees list
+	    */
+	  int sizeOfList= js.getInt("Employees.size()");
+	   System.out.println(sizeOfList);
+	   
+	   /**
+	    * Pring all the employeeys ID's
+	    */
+	   
+	//   for(int i =0;i<sizeOfList;i++) {
+//		   
+	//   
+	//  String allEmployeeIDs= js.getString("Employees["+i+"].employee_id");
+	//  // System.out.println(allEmployeeIDs);
+	//  
+	//  /**
+	//   * 
+	//   */
+	//  
+	//  if(allEmployeeIDs.contentEquals(employeeID)) {
+//		  System.out.println("Employee ID: "+employeeID +" is present inbody");
+//		  
+//		  String employeeFirstName= js.getString("Employees["+i+"].emp_firstname");
+//		  System.out.println(employeeFirstName);
+//		  break;
+		
+		
+		}
+		
 	
-	
-	}
 	@Test
 	public void dPUTupdateCreatedEmployee() {
 		
-	RequestSpecification updateCreatedEmployeeRequest=given().header("Content-Type","application/json").header("Authorization",token)
-	.body("{\n" + 
-			"  \"employee_id\": \""+employeeID+"\",\n" + 
-			"  \"emp_firstname\": \"syntaxUpdatedFirstName\",\n" + 
-			"  \"emp_lastname\": \"syntaxUpdatedLastName\",\n" + 
-			"  \"emp_middle_name\": \"syntaxUpdatedMiddleName\",\n" + 
-			"  \"emp_gender\": \"F\",\n" + 
-			"  \"emp_birthday\": \"2000-07-11\",\n" + 
-			"  \"emp_status\": \"Employee\",\n" + 
-			"  \"emp_job_title\": \"Cloud Consultant\"\n" + 
-			"}");
+		RequestSpecification updateCreatedEmployeeRequest=given().header("Content-Type","application/json").header("Authorization",token)
+				.body("{\n" + 
+						"  \"employee_id\": \""+employeeID+"\",\n" + 
+						"  \"emp_firstname\": \"syntaxUpdatedFirstName\",\n" + 
+						"  \"emp_lastname\": \"syntaxUpdatedLastName\",\n" + 
+						"  \"emp_middle_name\": \"syntaxUpdatedMiddleName\",\n" + 
+						"  \"emp_gender\": \"F\",\n" + 
+						"  \"emp_birthday\": \"2000-07-11\",\n" + 
+						"  \"emp_status\": \"Employee\",\n" + 
+						"  \"emp_job_title\": \"Cloud Consultant\"\n" + 
+						"}");
+				
+				Response updateCreatedEmployeeResponse=updateCreatedEmployeeRequest.when().put("/updateEmployee.php");
+				
+				String response=updateCreatedEmployeeResponse.prettyPrint();
+				}		
+
+	@Test
+	public void eGETupdatedEmployee() {
+		
+	RequestSpecification getUpdatedEmployeeRequest=given().header("Content-Type","application/json").header("Authorization",token)
+			.queryParam("employee_id",employeeID ).log().all();
 	
-	Response updateCreatedEmployeeResponse=updateCreatedEmployeeRequest.when().put("/updateEmployee.php");
+//Response getUpdatedEmployeeRespone = getUpdatedEmployee.when().get("/updateEmployee.php");
 	
-	String response=updateCreatedEmployeeResponse.prettyPrint();
+	
+	
+	
+	
+	
+	
 	}
+	
+	
+	
 	
 }		
 		
 		
-		
+	
 		
 		
 	
