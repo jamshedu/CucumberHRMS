@@ -1,180 +1,87 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/ContactDetails.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/APIWorkflow.feature");
 formatter.feature({
-  "name": "Contact Details",
-  "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "employee contacts details credential",
-  "description": "",
-  "keyword": "Scenario",
+  "name": "Syntax HRMS API End to End Workflow",
+  "description": "Description: This feature tests and verifies Syntax HRMS Web Services \nThe workflow consists of the following sequential calls ",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@mvn"
+      "name": "@workflow"
     }
   ]
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user login with valid \"Admin\" and \"Hum@nhrm123\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_login_with_valid_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user navigate to employee list",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_navigate_to_employee_list()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user search with id and click on \"14444\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_search_with_id_and_click_on(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user click on contacts details",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_click_on_contacts_details()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user add \"3334 Artesia #41\",\"Torrance\",\"California\",\"90504\",\"United States\",\"333-223-2233\",\"319-222-3344\",\"james88@yahoo.com\",",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_add(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user verified",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_verified()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.uri("file:src/test/resources/features/Emergency.feature");
-formatter.feature({
-  "name": "Emergency Contacts",
-  "description": "",
-  "keyword": "Feature"
 });
 formatter.background({
   "name": "",
   "description": "",
   "keyword": "Background"
 });
-formatter.before({
-  "status": "skipped"
-});
 formatter.step({
-  "name": "user login with valid \"Admin\" and \"Hum@nhrm123\"",
+  "name": "a JWT is generated",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_login_with_valid_and(java.lang.String,java.lang.String)"
+  "location": "com.hrms_API.practice.TokenGenerationSteps.a_JWT_is_generated()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user navigate to employee list",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_navigate_to_employee_list()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user search with id and click on \"14444\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.ContactDetailsSteps.user_search_with_id_and_click_on(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "employee emergency contact details",
+  "name": "Creating an employee",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@mvn"
+      "name": "@workflow"
     }
   ]
 });
 formatter.step({
-  "name": "user click on emrgency contacts",
-  "keyword": "And "
+  "name": "a request is prepared to create an employee",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_emrgency_contacts()"
+  "location": "com.hrms_API.practice.WorkflowAllSteps.a_request_is_prepared_to_create_an_employee()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user click on add button",
-  "keyword": "And "
+  "name": "a POST call is made to create an employee",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_add_button()"
+  "location": "com.hrms_API.practice.WorkflowAllSteps.a_POST_call_is_made_to_create_an_employee()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user fill uot emergency contacts \"Safar\",\"Friend\",\"333-222-4444\",\"222-333-5555\",\"111-222-3344\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.cucumber.steps.EmargencyContactsSteps.user_fill_uot_emergency_contacts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user click on save botton",
+  "name": "the status code for creating an employee is 201",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_save_botton()"
+  "location": "com.hrms_API.practice.WorkflowAllSteps.the_status_code_for_creating_an_employee_is(int)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.after({
-  "status": "skipped"
+formatter.step({
+  "name": "the employee is created and response contains key \"Message\" and value \"Entry Created\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.hrms_API.practice.WorkflowAllSteps.the_employee_is_created_and_response_contains_key_and_value(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the employee ID \"Employee[0].employee_id\" is stored as a global variable to be used for other calls",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.hrms_API.practice.WorkflowAllSteps.the_employee_ID_is_stored_as_a_global_variable_to_be_used_for_other_calls(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
 });
 });

@@ -3,177 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-07-22T21:40:00.633Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.cucumber.steps.Hooks.start()"
-            }
-          }
-        ],
-        "line": 5,
-        "name": "employee contacts details credential",
-        "description": "",
-        "id": "contact-details;employee-contacts-details-credential",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.cucumber.steps.Hooks.end(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user login with valid \"Admin\" and \"Hum@nhrm123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Admin\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Hum@nhrm123\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_login_with_valid_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user navigate to employee list",
-            "match": {
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_navigate_to_employee_list()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "user search with id and click on \"14444\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"14444\"",
-                  "offset": 33
-                }
-              ],
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_search_with_id_and_click_on(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "user click on contacts details",
-            "match": {
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_click_on_contacts_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2000000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "user add \"3334 Artesia #41\",\"Torrance\",\"California\",\"90504\",\"United States\",\"333-223-2233\",\"319-222-3344\",\"james88@yahoo.com\",",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"3334 Artesia #41\"",
-                  "offset": 9
-                },
-                {
-                  "val": "\"Torrance\"",
-                  "offset": 28
-                },
-                {
-                  "val": "\"California\"",
-                  "offset": 39
-                },
-                {
-                  "val": "\"90504\"",
-                  "offset": 52
-                },
-                {
-                  "val": "\"United States\"",
-                  "offset": 60
-                },
-                {
-                  "val": "\"333-223-2233\"",
-                  "offset": 76
-                },
-                {
-                  "val": "\"319-222-3344\"",
-                  "offset": 91
-                },
-                {
-                  "val": "\"james88@yahoo.com\"",
-                  "offset": 106
-                }
-              ],
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_add(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "user verified",
-            "match": {
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_verified()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@mvn"
-          }
-        ]
-      }
-    ],
-    "name": "Contact Details",
-    "description": "",
-    "id": "contact-details",
-    "keyword": "Feature",
-    "uri": "file:src/test/resources/features/ContactDetails.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 4,
+        "line": 7,
         "name": "",
         "description": "",
         "type": "background",
@@ -181,168 +11,131 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 4419000000,
+              "status": "passed"
             },
-            "line": 5,
-            "name": "user login with valid \"Admin\" and \"Hum@nhrm123\"",
+            "line": 9,
+            "name": "a JWT is generated",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Admin\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"Hum@nhrm123\"",
-                  "offset": 34
-                }
-              ],
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_login_with_valid_and(java.lang.String,java.lang.String)"
+              "location": "com.hrms_API.practice.TokenGenerationSteps.a_JWT_is_generated()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "user navigate to employee list",
-            "match": {
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_navigate_to_employee_list()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 7,
-            "name": "user search with id and click on \"14444\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"14444\"",
-                  "offset": 33
-                }
-              ],
-              "location": "com.cucumber.steps.ContactDetailsSteps.user_search_with_id_and_click_on(java.lang.String)"
-            },
-            "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-07-22T21:40:00.904Z",
-        "before": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.cucumber.steps.Hooks.start()"
-            }
-          }
-        ],
-        "line": 10,
-        "name": "employee emergency contact details",
+        "start_timestamp": "2020-07-26T20:52:54.451Z",
+        "line": 14,
+        "name": "Creating an employee",
         "description": "",
-        "id": "emergency-contacts;employee-emergency-contact-details",
-        "after": [
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "match": {
-              "location": "com.cucumber.steps.Hooks.end(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "syntax-hrms-api-end-to-end-workflow;creating-an-employee",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 7000000,
+              "status": "passed"
             },
-            "line": 11,
-            "name": "user click on emrgency contacts",
+            "line": 15,
+            "name": "a request is prepared to create an employee",
             "match": {
-              "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_emrgency_contacts()"
+              "location": "com.hrms_API.practice.WorkflowAllSteps.a_request_is_prepared_to_create_an_employee()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 203000000,
+              "status": "passed"
             },
-            "line": 12,
-            "name": "user click on add button",
+            "line": 16,
+            "name": "a POST call is made to create an employee",
             "match": {
-              "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_add_button()"
+              "location": "com.hrms_API.practice.WorkflowAllSteps.a_POST_call_is_made_to_create_an_employee()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1000000,
-              "status": "skipped"
+              "duration": 60000000,
+              "status": "passed"
             },
-            "line": 13,
-            "name": "user fill uot emergency contacts \"Safar\",\"Friend\",\"333-222-4444\",\"222-333-5555\",\"111-222-3344\"",
+            "line": 17,
+            "name": "the status code for creating an employee is 201",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Safar\"",
-                  "offset": 33
-                },
+                  "val": "201",
+                  "offset": 44
+                }
+              ],
+              "location": "com.hrms_API.practice.WorkflowAllSteps.the_status_code_for_creating_an_employee_is(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 125000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the employee is created and response contains key \"Message\" and value \"Entry Created\"",
+            "match": {
+              "arguments": [
                 {
-                  "val": "\"Friend\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"333-222-4444\"",
+                  "val": "\"Message\"",
                   "offset": 50
                 },
                 {
-                  "val": "\"222-333-5555\"",
-                  "offset": 65
-                },
-                {
-                  "val": "\"111-222-3344\"",
-                  "offset": 80
+                  "val": "\"Entry Created\"",
+                  "offset": 70
                 }
               ],
-              "location": "com.cucumber.steps.EmargencyContactsSteps.user_fill_uot_emergency_contacts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.hrms_API.practice.WorkflowAllSteps.the_employee_is_created_and_response_contains_key_and_value(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "skipped"
+              "duration": 108000000,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "user click on save botton",
+            "line": 19,
+            "name": "the employee ID \"Employee[0].employee_id\" is stored as a global variable to be used for other calls",
             "match": {
-              "location": "com.cucumber.steps.EmargencyContactsSteps.user_click_on_save_botton()"
+              "arguments": [
+                {
+                  "val": "\"Employee[0].employee_id\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.hrms_API.practice.WorkflowAllSteps.the_employee_ID_is_stored_as_a_global_variable_to_be_used_for_other_calls(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@mvn"
+            "name": "@workflow"
           }
         ]
       }
     ],
-    "name": "Emergency Contacts",
-    "description": "",
-    "id": "emergency-contacts",
+    "name": "Syntax HRMS API End to End Workflow",
+    "description": "Description: This feature tests and verifies Syntax HRMS Web Services \nThe workflow consists of the following sequential calls ",
+    "id": "syntax-hrms-api-end-to-end-workflow",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Emergency.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/APIWorkflow.feature",
+    "tags": [
+      {
+        "name": "@workflow",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
