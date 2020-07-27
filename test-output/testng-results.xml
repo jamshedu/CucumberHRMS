@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="115" started-at="2020-07-26T18:59:11 PDT" finished-at="2020-07-26T18:59:11 PDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="115" started-at="2020-07-26T18:59:11 PDT" finished-at="2020-07-26T18:59:11 PDT">
+      <class name="com.hrms_API.practice.TDD">
+        <test-method status="PASS" signature="knockingDoor()[pri:0, instance:com.hrms_API.practice.TDD@1f57539]" name="knockingDoor" duration-ms="11" started-at="2020-07-26T18:59:11 PDT" finished-at="2020-07-26T18:59:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- knockingDoor -->
+        <test-method status="PASS" signature="openingDoor()[pri:0, instance:com.hrms_API.practice.TDD@1f57539]" name="openingDoor" duration-ms="2" started-at="2020-07-26T18:59:11 PDT" depends-on-methods="com.hrms_API.practice.TDD.knockingDoor" finished-at="2020-07-26T18:59:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingDoor -->
+        <test-method status="PASS" signature="closingDoor()[pri:0, instance:com.hrms_API.practice.TDD@1f57539]" name="closingDoor" duration-ms="1" started-at="2020-07-26T18:59:11 PDT" depends-on-methods="com.hrms_API.practice.TDD.openingDoor" finished-at="2020-07-26T18:59:11 PDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingDoor -->
+      </class> <!-- com.hrms_API.practice.TDD -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

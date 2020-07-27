@@ -1,5 +1,7 @@
 package com.hrmsAPI.utils;
 
+import org.json.JSONObject;
+
 import com.hrms_API.practice.HardcodedExample;
 
 public class PayloadConstants {
@@ -21,9 +23,26 @@ public class PayloadConstants {
 		return createEmployeeBody;
 	}	
 	/**
-	 * Creating payload using JSONObject and returning it as a String 
+	 * Creating payload using JSONObject adn returning it as String 
+	 *  
 	 * @return
 	 */
+	public static String creatEmployeePayload() {
+		
+		JSONObject obj = new JSONObject();
+		obj.put("emp_firstname", "syntaxFirstName");
+		obj.put("emp_lastname", "syntaxLastName");
+		obj.put("emp_middle_name", "syntaxMiddleName");
+		obj.put("emp_gender", "F");
+		obj.put("emp_birthday", "2000-07-11");
+		obj.put("emp_status", "Employee");
+		obj.put("emp_job_title", "Cloud Architect");
+		return obj.toString();
+		
+		
+		
+		
+	}
 	
 	
 	/**
