@@ -22,3 +22,10 @@ Feature: Syntax HRMS API End to End Workflow
     And the retrieved data at "employee" matches the data used created an employee "employee[0].employee_id"
       | emp_firstname   | emp_middle_name  | emp_lastname   | emp_birthday | emp_gender | emp_job_title   | emp_status |
       | syntaxFirstName | syntaxMiddleName | syntaxLastName | 2000-07-11   | Female     | Cloud Architect | Employee   |
+
+      
+      
+      #Scenario: Get all employee from database
+      #Given a request is prepared to retrieve all the employees
+      #When a Get call is made to retrieve all the employees
+      #And a rertrieved employees ID match 
